@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.kafi.dao.Words" table="dikshineeri">
+		<id name="id" type="integer" column="id">
+			<generator class="increment" />
+		</id>
+		<property name="kafi" type="string" column="Kafi" length="15"></property>
+		<property name="wc" type="string" column="WC" length="15"></property>
+		<property name="ammari" type="string" column="Amaari" length="15"></property>
+		<property name="ingliizo" type="string" column="Ingliizo"
+			length="15"></property>
+	</class>
+</hibernate-mapping>
